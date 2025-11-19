@@ -1,0 +1,27 @@
+1. Connect to server using public key
+
+ssh -i "/Users/havindufonseka/Developer/University/21/networking/socket-server_key.pem" azureuser@20.244.4.92
+
+2. Start server
+
+cd ~/socket-programming
+python3 server.py --port 5001
+
+3. Start Client
+
+GUI - python3.12 client_gui.py
+non-GUI - python3 client.py 20.244.4.92 5001 Havindu
+
+4. Wireshark filter
+
+wifi en0
+tcp.port == 5001
+
+5. if adress already used
+
+tmux ls
+socket-server: 1 windows (created Wed...)
+tmux attach -t socket-server
+Ctrl + C
+Ctrl + B then D
+python3 server.py --port 5001
