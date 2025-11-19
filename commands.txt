@@ -1,6 +1,7 @@
-1. Connect to server using public key
+1. Connect to server
 
-ssh -i "/Users/havindufonseka/Developer/University/21/networking/socket-server_key.pem" azureuser@20.244.4.92
+ssh azureuser@20.244.4.92
+password : 1234
 
 2. Start server
 
